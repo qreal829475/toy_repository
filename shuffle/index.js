@@ -41,7 +41,7 @@ function* shuffle(cards, pickedCards) {
     while (len) {
         const i = Math.floor(Math.random() * len);
         pickedCards.add(cards[i]);
-        yield* cards[i];
+        yield (cards[i].join(''));
         [cards[i], cards[len - 1]] = [cards[len - 1], cards[i]];
         len--;
     }
@@ -56,8 +56,8 @@ for(let v of a){
 }
 
 let dom = [];
-for(let i = 0; i < c.length; i+=2){
-    dom.push(`<div>${c[i] + c[i+1]}</div>`);
+for(let i = 0; i < c.length; i++){
+    dom.push(`<div>${c[i]}</div>`);
 }
 document.querySelectorAll("body")[0].innerHTML = `<div>${dom}</div>`;
 console.log(c);
