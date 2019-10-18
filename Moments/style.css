@@ -1,0 +1,213 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.root{
+  padding-bottom: 50px;
+}
+
+.root textarea {
+  border: none;
+  width: 100%;
+  height: 100px;
+  padding: 10px 20px;
+  color: #222222;
+  font-size: 15px;
+}
+
+.root .imgsContent{
+  margin: 0 15px 0 10px;
+}
+
+.root .create {
+  position: fixed;
+  width: 120px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #26be6a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.root .input-info {
+  padding: 10px 10px;
+  margin: 0 20px;
+  border-top: 1px solid #eeeeee;
+  font-size: 15px;
+  color: #333333;
+}
+
+.root .input-info.tip {
+  font-size: 13px;
+  color: #888888;
+}
+
+.root .input-info.uploadImg {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 10px 10px;
+}
+
+.root .input-info label {
+  display: inline-block;
+  width: 6em;
+}
+
+.root .input-info label {
+  padding: 10px 0;
+}
+
+.root .input-info input {
+  line-height: 20px;
+  border: none;
+  height: 36px;
+  width: 68%;
+  font-size: 15px;
+}
+
+.isMainBox {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+.imageInputs {
+  height: 78%;
+  border: 1px solid #e0e0e0;
+  width: 18%;
+  position: relative;
+}
+.imageinputsnone {
+  height: 78%;
+  border: 1px solid #e0e0e0;
+  width: 18%;
+  display: none;
+  position: relative;
+}
+.imageShowBox {
+  height: inherit;
+}
+.inputFile {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+}
+
+/* .photo.hide {
+  display: none !important;
+} */
+
+.photo img {
+  width: 100%;
+  vertical-align: middle;
+  -webkit-touch-callout: none;
+}
+
+.UploadImage.normal .uploadImgContainer {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+.UploadImage.normal .photo {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: relative;
+  border: 1px solid #e0e0e0;
+  flex-shrink: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.UploadImage.normal .photo .img {
+  overflow: hidden;
+  height: 68px;
+  line-height: 66px;
+}
+
+.UploadImage.normal .iconCamera {
+  width: 50%;
+}
+
+.UploadImage.normal .waiting {
+}
+
+.UploadImage.onePic .uploadImgContainer {
+  position: relative;
+  width: 245px;
+  height: 140px;
+  border: 1px solid #e0e0e0;
+}
+
+.UploadImage.onePic .photo {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.UploadImage.onePic .img {
+  display: flex;
+  align-self: center;
+}
+
+.UploadImage.onePic .iconCamera {
+  font-size: 60px;
+  padding-top: 30px;
+  display: inline-block;
+}
+
+.UploadImage .close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: #999;
+  line-height: 20px;
+  font-size: 20px;
+  padding: 4px;
+  height: 24px;
+  width: 24px;
+}
+
+.UploadImage .clickBtn {
+  width: 100%;
+  line-height: 2em;
+  background: #f0f0f0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.UploadImage .waiting {
+  padding: 25% 0;
+}
+
+.UploadImage .hide {
+  display: none !important;
+}
